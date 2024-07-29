@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingLab</title>
+    <link rel="stylesheet" href="CodingLab1.css">
+    <script src="https://kit.fontawesome.com/75372ac341.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="total">
+     <div class="nav">
+        <nav>
+            <h1 class="code">CODING <span> LAB</span></h1>
+            <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+            <i class="fa-solid fa-xmark" onclick="Closemenu()"  style="color: #ffffff;"></i>
+            </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #ffffff;"></i>
+        </nav>
+     </div>
+     <div class="item">
+
+     </div>
+     <div class="cen">
+     <div class="para">
+        <h1 class="create">
+            Create Amazing Website Pure<br> <span>  HTML & CSS Only</span> <br>
+        </h1>
+     </div>
+     <div class="but">
+        <button type="button" class="but1">Learn more</button>
+        <button type="button" class="but2">Subscribe</button>
+     </div>
+    </div>
+
+
+    </div>
+    <script>
+        var side=document.getElementById("sidemenu");
+        function openmenu(){
+            side.style.right=0;
+        }
+        function Closemenu(){
+            side.style.right="-150px";
+        }
+    </script>
+</body>
+</html>
