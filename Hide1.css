@@ -1,0 +1,58 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image:url("hide3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    size: 100%;
+    
+}
+.full{
+    width: 30%;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    padding: 1cm;
+    border-radius: 15px;
+    top:50%;
+    left: 50%;
+    transform: translate(100%,40%);
+    
+    
+}
+.he{
+    text-align: center;
+}
+.full .body .answer{
+    border-bottom: 1px solid black;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.full .body .question{
+    font-size: 0.5cm;
+    cursor: pointer;
+}
+.full .body .question::after{
+    content: '+';
+    position: absolute;
+    right: 1cm;
+    transition: 0.3s;
+    
+}
+.full .body.active .answer{
+    height: 100px;
+
+}
+.full .body.active .question{
+    font-size: 18px;
+    transition: .5s;
+}
+.full .body.active .question::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
